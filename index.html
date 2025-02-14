@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Website</title>
+    <title>Virginia L. Covert | Research & Projects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
             text-align: center;
         }
         header {
-            background-color: #333;
+            background-color: #111;
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            background: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
         section {
+            max-width: 900px;
+            margin: 50px auto;
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
+        h2 {
+            color: #222;
         }
-        a {
+        .projects a {
             color: #0073e6;
-            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .projects a:hover {
+            color: #ff5733;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #111;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my personal website!</p>
+        Virginia Covert<br>
+        <span style="font-size: 18px; font-weight: normal;">Researcher | Data Scientist | Innovator</span>
     </header>
     
-    <section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a [Your Profession or Interest]. I love working on exciting projects related to [Your Interests].</p>
+        <p>Welcome! I am passionate about research, data science, and innovative solutions for real-world problems.</p>
     </section>
-
-    <section>
-        <h2>Projects</h2>
+    
+    <section id="projects" class="projects">
+        <h2>Projects & Publications</h2>
         <ul>
-            <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a></li>
-            <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3</a></li>
+            <li>
+                <a href="https://doi.org/10.1080/03610470.2024.2447632" target="_blank">
+                    Spent Brewer’s Yeast as an Alternative Ingredient in Aquafeed (JASBC)
+                </a>
+            </li>
         </ul>
     </section>
-
-    <section>
+    
+    <section id="contact">
         <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Find me on <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+        <p>Email: <a href="mailto:virginiabee47@gmail.com">virginiabee47@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/VirginiaBee47" target="github.com/VirginiaBee47"></a></p>
+        <p>ORCID: <a href="https://orcid.org/0009-0008-1138-9708">[0009-0008-1138-9708]</a></p>
     </section>
-
+    
     <footer>
-        <p>&copy; 2025 Your Name. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+        <p>&copy; 2025 Virginia L. Covert | Powered by GitHub Pages</p>
     </footer>
 </body>
 </html>
