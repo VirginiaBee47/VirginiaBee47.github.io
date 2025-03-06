@@ -2,4 +2,4 @@ title: "Virginia's Personal Site"
 author: "Virginia Covert"
 email: "virginiabee47@gmail.com"
 description: "Welcome to my personal site!"
-theme: minima  # Optional, if using a theme
+theme: jekyll-theme-minimal  # Optional, if using a theme
