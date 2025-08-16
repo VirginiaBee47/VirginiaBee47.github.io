@@ -1,0 +1,45 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.player-container {
+    display: grid;
+    grid-template-columns: 75px 150px;
+    background-color: lightgray;
+    justify-content: left;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 4px;
+    background-color: darkolivegreen;
+    padding: 4px; 
+}
+
+.row > * {
+    background-color: burlywood;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 12px;
+}
+
+.row > .tripleWord {
+    background-color: tomato;
+}
+
+.row > .doubleLetter {
+    background-color: lightblue;
+}
+
+.row > .doubleWord {
+    background-color: lightpink;
+}
+
+.row > .tripleLetter {
+    background-color: dodgerblue;
+}
+
+.row > .start {
+    background-color: lightpink;
+}

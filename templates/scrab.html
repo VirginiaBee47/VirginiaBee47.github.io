@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is the scrabble game board page -->
+<head>
+    <link rel="stylesheet" href="/styles/scrab.css">
+    <title>Scrabble Emulator</title>
+    <script type="module" src="/scripts/scrab.js"></script>
+    <noscript>No scripting supported.</noscript>
+</head>
+
+<body>
+    <h1 id="gameName">Scrab</h1>
+    
+    <div class="board">
+        <div class="row" id="7">
+            <div class="tripleWord" id="-7">Triple Word Score</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="doubleLetter" id="-4">Double Letter Score</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="tripleWord" id="0">Triple Word Score</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="doubleLetter" id="4">Double Letter Score</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="tripleWord" id="7">Triple Word Score</div>
+        </div>
+        <div class="row" id="6">
+            <div class="base" id="-7">x</div>
+            <div class="doubleWord" id="-6">Double Word Score</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="tripleLetter" id="-2">Triple Letter Score</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="tripleLetter" id="2">Triple Letter Score</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="doubleWord" id="6">Double Word Score</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="5">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="doubleWord" id="-5">Double Word Score</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="doubleLetter" id="-1">Double Letter Score</div>
+            <div class="base" id="0">x</div>
+            <div class="doubleLetter" id="1">Double Letter Score</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="doubleWord" id="5">Double Word Score</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="4">
+            <div class="doubleLetter" id="-7">Double Letter Score</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="doubleWord" id="-4">Double Word Score</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="doubleLetter" id="0">Double Letter Score</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="doubleWord" id="4">Double Word Score</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="doubleLetter" id="7">Double Letter Score</div>
+        </div>
+        <div class="row" id="3">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="doubleWord" id="-3">Double Word Score</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="doubleWord" id="3">Double Word Score</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="2">
+            <div class="base" id="-7">x</div>
+            <div class="tripleLetter" id="-6">Triple Letter Score</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="tripleLetter" id="-2">Triple Letter Score</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="tripleLetter" id="2">Triple Letter Score</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="tripleLetter" id="6">Triple Letter Score</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="1">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="doubleLetter" id="-5">Double Letter Score</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="doubleLetter" id="-1">Double Letter Score</div>
+            <div class="base" id="0">x</div>
+            <div class="doubleLetter" id="1">Double Letter Score</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="doubleLetter" id="5">Double Letter Score</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="0">
+            <div class="tripleWord" id="-7">Triple Word Score</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="doubleLetter" id="-4">Double Letter Score</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="start" id="0">Start</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="doubleLetter" id="4">Double Letter Score</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="tripleWord" id="7">Triple Word Score</div>
+        </div>
+        <div class="row" id="-1">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="doubleLetter" id="-5">Double Letter Score</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="doubleLetter" id="-1">Double Letter Score</div>
+            <div class="base" id="0">x</div>
+            <div class="doubleLetter" id="1">Double Letter Score</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="doubleLetter" id="5">Double Letter Score</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="-2">
+            <div class="base" id="-7">x</div>
+            <div class="tripleLetter" id="-6">Triple Letter Score</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="tripleLetter" id="-2">Triple Letter Score</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="tripleLetter" id="2">Triple Letter Score</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="tripleLetter" id="6">Triple Letter Score</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="-3">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="doubleWord" id="-3">Double Word Score</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="doubleWord" id="3">Double Word Score</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="-4">
+            <div class="doubleLetter" id="-7">Double Letter Score</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="doubleWord" id="-4">Double Word Score</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="doubleLetter" id="0">Double Letter Score</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="doubleWord" id="4">Double Word Score</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="doubleLetter" id="7">Double Letter Score</div>
+        </div>
+        <div class="row" id="-5">
+            <div class="base" id="-7">x</div>
+            <div class="base" id="-6">x</div>
+            <div class="doubleWord" id="-5">Double Word Score</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="doubleLetter" id="-1">Double Letter Score</div>
+            <div class="base" id="0">x</div>
+            <div class="doubleLetter" id="1">Double Letter Score</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="doubleWord" id="5">Double Word Score</div>
+            <div class="base" id="6">x</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="-6">
+            <div class="base" id="-7">x</div>
+            <div class="doubleWord" id="-6">Double Word Score</div>
+            <div class="base" id="-5">x</div>
+            <div class="base" id="-4">x</div>
+            <div class="base" id="-3">x</div>
+            <div class="tripleLetter" id="-2">Triple Letter Score</div>
+            <div class="base" id="-1">x</div>
+            <div class="base" id="0">x</div>
+            <div class="base" id="1">x</div>
+            <div class="tripleLetter" id="2">Triple Letter Score</div>
+            <div class="base" id="3">x</div>
+            <div class="base" id="4">x</div>
+            <div class="base" id="5">x</div>
+            <div class="doubleWord" id="6">Double Word Score</div>
+            <div class="base" id="7">x</div>
+        </div>
+        <div class="row" id="-7">
+            <div class="tripleWord" id="-7">Triple Word Score</div>
+            <div class="base" id="-6">x</div>
+            <div class="base" id="-5">x</div>
+            <div class="doubleLetter" id="-4">Double Letter Score</div>
+            <div class="base" id="-3">x</div>
+            <div class="base" id="-2">x</div>
+            <div class="base" id="-1">x</div>
+            <div class="tripleWord" id="0">Triple Word Score</div>
+            <div class="base" id="1">x</div>
+            <div class="base" id="2">x</div>
+            <div class="base" id="3">x</div>
+            <div class="doubleLetter" id="4">Double Letter Score</div>
+            <div class="base" id="5">x</div>
+            <div class="base" id="6">x</div>
+            <div class="tripleWord" id="7">Triple Word Score</div>
+        </div>
+    </div>
+    <button id="startGame">Start Game</button>
+    <hr></hr>
+    <div class="player" width="33%">
+        <div class="player-container">
+            <div>Letters: </div><div id="letters"></div>
+        </div>
+        <div class="player-container">
+            <div>Score: </div><div id="score"></div>
+        </div>
+    </div>
+</body>
+</html>
